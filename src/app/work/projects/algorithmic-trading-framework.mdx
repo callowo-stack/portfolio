@@ -1,0 +1,93 @@
+---
+title: "Algorithmic Trading Framework"
+publishedAt: "2024-11-16"
+summary: "Professional backtesting and strategy development framework implementing the Research-Backtest-Implement methodology for systematic trading."
+images:
+  - "/images/projects/algo-framework/cover-01.jpg"
+team:
+  - name: "Calvin McCormick"
+    role: "ML Engineer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/calvinm9/"
+link: "https://github.com/callowo-stack/Algorithmic-Trading-Framework"
+---
+
+## Overview
+
+A production-grade framework for developing, testing, and deploying quantitative trading strategies. Built on the **RBI (Research-Backtest-Implement)** methodology, this system ensures rigorous validation before any strategy goes live.
+
+## The RBI Methodology
+
+### Research Phase
+**Evidence-Based Development**
+- Review academic papers and market analysis
+- Identify statistical edges
+- Document trading rules clearly
+- Formulate testable hypotheses
+
+### Backtest Phase  
+**Rigorous Historical Validation**
+- Multi-timeframe testing (1min to 1day)
+- Transaction cost modeling (commissions, slippage)
+- Realistic order execution simulation
+- Walk-forward optimization
+- Out-of-sample testing
+- Statistical significance testing
+
+### Implement Phase
+**Controlled Deployment**
+- Start with minimal positions ($10)
+- Paper trading validation
+- Monitor for 2 weeks minimum
+- Scale gradually based on performance
+- Continuous risk monitoring
+
+## Key Features
+
+- **Comprehensive Backtesting Engine**: Historical validation with realistic market conditions
+- **Multi-Strategy Portfolio**: Simultaneous testing and optimization of multiple strategies
+- **Risk Management Framework**: Position sizing, stop-loss, portfolio heat limits
+- **Performance Analytics**: Sharpe ratio, maximum drawdown, win rate calculations
+- **Clean Code Architecture**: Modular design with base strategy classes
+
+## Technologies Used
+
+- **Python 3.11+**: Core framework language
+- **Pandas**: Time series data manipulation
+- **NumPy**: High-performance numerical computing
+- **Matplotlib/Plotly**: Strategy performance visualization
+- **Object-Oriented Design**: Strategy inheritance and polymorphism
+
+## Technical Implementation
+
+The framework implements a clean inheritance structure where all strategies extend a `BaseStrategy` class. Each strategy defines entry/exit rules while the backtesting engine handles:
+- Historical data management
+- Order execution simulation
+- Position tracking
+- P&L calculation
+- Performance metrics
+
+Example mean reversion strategy demonstrates the framework's flexibility - implements Bollinger Bands with RSI confirmation, complete with parameter optimization and comprehensive logging.
+
+## Challenges and Learnings
+
+**Challenge**: Accurately modeling slippage and transaction costs in backtests.  
+**Solution**: Implemented realistic slippage models based on order size and market volatility, ensuring backtest results reflect real trading conditions.
+
+**Challenge**: Preventing overfitting during optimization.  
+**Solution**: Enforced walk-forward optimization with out-of-sample testing, requiring strategies to perform on unseen data.
+
+## Performance Metrics Tracked
+
+- **Returns**: Total return, annualized return, monthly returns
+- **Risk**: Volatility, Sharpe ratio, Sortino ratio, maximum drawdown
+- **Trade Statistics**: Win rate, average win/loss, profit factor, expectancy
+- **Execution**: Fill rates, slippage analysis
+
+## Outcome
+
+This framework demonstrates deep understanding of quantitative finance, software architecture for financial applications, and rigorous testing methodologies. The RBI approach ensures only robust, well-validated strategies make it to production.
+
+The system has been used to develop and test multiple strategies across different asset classes, with comprehensive documentation enabling rapid iteration and improvement.
+
+**GitHub Repository**: [Algorithmic-Trading-Framework](https://github.com/callowo-stack/Algorithmic-Trading-Framework)

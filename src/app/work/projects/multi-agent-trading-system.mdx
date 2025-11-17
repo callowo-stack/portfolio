@@ -1,0 +1,68 @@
+---
+title: "Multi-Agent AI Trading System"
+publishedAt: "2024-11-15"
+summary: "An advanced AI-powered trading framework leveraging multiple specialized agents for collaborative market analysis and signal generation."
+images:
+  - "/images/projects/multi-agent/cover-01.jpg"
+team:
+  - name: "Calvin McCormick"
+    role: "ML Engineer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/calvinm9/"
+link: "https://github.com/callowo-stack/Multi-Agent-Trading-System"
+---
+
+## Overview
+
+A production-grade AI trading framework that employs multiple specialized agents working collaboratively to analyze markets and generate high-confidence trading signals. Each agent represents a distinct investment philosophy or analytical approach, creating a robust multi-perspective analysis system.
+
+## Architecture
+
+The system implements a hierarchical multi-agent architecture where specialized AI agents collaborate to make informed trading decisions:
+
+**Investment Philosophy Agents:**
+- **Value Agent**: Identifies undervalued assets with strong fundamentals
+- **Growth Agent**: Focuses on high-potential disruptive companies
+- **Momentum Agent**: Captures trending market movements
+- **Contrarian Agent**: Finds opportunities in market inefficiencies
+
+**Analysis Agents:**
+- **Fundamentals Agent**: Analyzes financial statements and metrics
+- **Technicals Agent**: Processes price action and technical indicators
+- **Sentiment Agent**: Evaluates market sentiment from news and social data
+- **Risk Manager**: Calculates risk metrics and sets position limits
+
+**Orchestration:**
+- **Portfolio Manager**: Synthesizes all signals and makes final decisions
+
+## Key Features
+
+- **Multi-Agent Collaboration**: Diverse perspectives through specialized agents with weighted voting system
+- **Comprehensive Analysis**: Combines fundamental, technical, and sentiment analysis with risk assessment
+- **Intelligent Decision Making**: Signal aggregation, dynamic position sizing, and portfolio optimization
+- **Extensible Framework**: Modular design for easy addition of new agents or strategies
+
+## Technologies Used
+
+- **Python 3.11+**: Core programming language
+- **Pandas & NumPy**: Data manipulation and numerical computing
+- **Scikit-learn**: Machine learning utilities
+- **Object-Oriented Design**: Abstract base classes, inheritance, type hints
+
+## Technical Highlights
+
+Implemented clean OOP architecture with abstract base classes ensuring consistent agent interfaces. Each agent maintains its own signal history for performance tracking. The system uses a consensus mechanism where agents vote on trading actions, with the portfolio manager making final decisions based on weighted agreement thresholds.
+
+The technical agent alone implements multiple indicators (SMA, RSI, volume analysis) with intelligent signal weighting and confidence scoring. All agents follow the same `analyze()` interface but implement their own unique methodologies.
+
+## Challenges and Learnings
+
+Balancing agent diversity while maintaining decision coherence was a key challenge. The solution involved implementing a weighted voting system with minimum consensus thresholds and allowing the risk manager to provide final safety checks.
+
+Another challenge was making agents interpretable - each signal includes detailed reasoning and metadata, allowing for full transparency in decision-making.
+
+## Outcome
+
+This project demonstrates advanced software architecture skills, multi-agent system design, and practical application of AI in finance. The modular framework allows for easy extension and testing of new trading strategies while maintaining robust risk management.
+
+**GitHub Repository**: [Multi-Agent-Trading-System](https://github.com/callowo-stack/Multi-Agent-Trading-System)

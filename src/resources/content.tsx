@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Calvin",
+  lastName: "McCormick",
+  name: `Calvin McCormick`,
+  role: "ML Engineer | Algorithmic Trading Systems",
+  avatar: "/images/avatar.jpeg",
+  email: "calvinkostmccormick@gmail.com",
+  location: "America/Chicago", // San Antonio timezone
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>I occasionally write about algorithmic trading, machine learning, and quantitative finance.</>,
 };
 
 const social: Social = [
@@ -24,17 +24,17 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/callowo-stack",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/calvinm9/",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/cal__mccormick/",
   },
   {
     name: "Email",
@@ -49,30 +49,25 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>ML Engineer | Algorithmic Trading Systems</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">TradeAI</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/tradeai-ai-powered-options-trading-dashboard",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Calvin McCormick is a Machine Learning Engineer specializing in algorithmic trading systems and real-time data processing.
+      <br />
+      With expertise in Python, FastAPI, React, and WebSocket technologies, Calvin builds sophisticated trading infrastructure.
     </>
   ),
 };
@@ -98,9 +93,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Calvin is a San Antonio-based Machine Learning Engineer with a passion for building intelligent 
+        systems for quantitative finance. With a background in New Media and Digital Design, he combines 
+        technical expertise with a deep understanding of user experience to create sophisticated trading 
+        infrastructure that bridges the gap between complex algorithms and practical application.
       </>
     ),
   },
@@ -109,41 +105,48 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Whole Foods Market",
+        timeframe: "Present",
+        role: "Team Member",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Currently working full-time while developing production-grade trading systems and 
+            seeking opportunities in quantitative finance and fintech.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Independent Development",
+        timeframe: "2024 - Present",
+        role: "ML Engineer & Trading Systems Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built multi-agent AI trading system with specialized agents for collaborative market 
+            analysis, demonstrating advanced software architecture and AI orchestration.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Developed production-grade algorithmic trading framework implementing Research-Backtest-Implement 
+            (RBI) methodology with comprehensive risk management and backtesting capabilities.
+          </>,
+          <>
+            Created real-time market analysis dashboard with WebSocket streaming, processing 1000+ 
+            messages per second with sub-100ms latency.
+          </>,
+          <>
+            Designed and deployed AI-powered trade planning application using Google Gemini API for 
+            institutional-grade multi-timeframe analysis.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Blue Nine Systems",
+        timeframe: "2022 - 2024",
+        role: "Web Designer & CSS Specialist",
+        achievements: [
+          <>
+            Redesigned client websites with focus on modern responsive design and user experience optimization.
           </>,
         ],
         images: [],
@@ -152,77 +155,84 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of North Carolina Asheville",
+        description: <>Bachelor of Arts in New Media with emphasis on Interactive Media and Web Design.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Asheville-Buncombe Technical Community College",
+        description: <>Associate of Arts and Sciences in Graphic Design and Digital Media.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "Machine Learning & AI",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Building multi-agent systems, real-time data processing, and AI-powered trading strategies 
+          using Python, Pandas, NumPy, and advanced ML frameworks.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Python",
+            icon: "python",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "NumPy",
+            icon: "numpy",
           },
         ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Trading Infrastructure",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Algorithmic trading frameworks, backtesting engines, risk management systems, 
+          and WebSocket-based real-time market data streaming.</>
         ),
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Python",
+            icon: "python",
+          },
+          {
+            name: "FastAPI",
+            icon: "fastapi",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Full-Stack Development",
+        description: (
+          <>Python (FastAPI, Flask), React, Next.js, WebSocket, Redis, PostgreSQL, 
+          Docker, and Vercel deployment.</>
+        ),
+        tags: [
+          {
+            name: "React",
+            icon: "react",
           },
           {
             name: "Next.js",
             icon: "nextjs",
           },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
+      },
+      {
+        title: "Financial Analysis",
+        description: (
+          <>Technical indicators (RSI, MACD, Bollinger Bands), multi-timeframe analysis, 
+          order flow analysis, and quantitative strategy development.</>
+        ),
+        tags: [],
+        images: [],
       },  
     ],
   },
@@ -231,7 +241,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about trading and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -241,7 +251,7 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Algorithmic trading and ML projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };

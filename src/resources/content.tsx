@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "McCormick",
   name: `Calvin McCormick`,
   role: "ML Engineer | Algorithmic Trading Systems",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/profile-avatar.jpg",
   email: "calvinkostmccormick@gmail.com",
   location: "America/Chicago", // San Antonio timezone
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
@@ -54,14 +54,14 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">TradeAI</strong>{" "}
+        <strong className="ml-4">Multi-Agent Trading System</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/tradeai-ai-powered-options-trading-dashboard",
+    href: "/work/multi-agent-trading-system",
   },
   subline: (
     <>

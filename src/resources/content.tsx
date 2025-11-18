@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "McCormick",
   name: `Calvin McCormick`,
   role: "ML Engineer | Algorithmic Trading Systems",
-  avatar: "/images/avatar.jpeg",
+  avatar: "/images/avatar.jpg",
   email: "calvinkostmccormick@gmail.com",
   location: "America/Chicago", // San Antonio timezone
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
@@ -86,7 +86,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/cal-mccormick",
   },
   intro: {
     display: true,

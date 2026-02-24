@@ -5,11 +5,11 @@ const person: Person = {
   firstName: "Calvin",
   lastName: "McCormick",
   name: `Calvin McCormick`,
-  role: "ML Engineer | Algorithmic Trading Systems",
+  role: "Quantitative Developer | ML Engineer",
   avatar: "/images/profile-avatar.jpg",
   email: "calvinkostmccormick@gmail.com",
-  location: "America/Chicago", // San Antonio timezone
-  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/Chicago",
+  languages: ["English"],
 };
 
 const newsletter: Newsletter = {
@@ -19,8 +19,6 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
@@ -49,7 +47,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>ML Engineer | Algorithmic Trading Systems</>,
+  headline: <>Quantitative Developer | ML Engineer</>,
   featured: {
     display: true,
     title: (
@@ -65,9 +63,11 @@ const home: Home = {
   },
   subline: (
     <>
-      Calvin McCormick is a Machine Learning Engineer specializing in algorithmic trading systems and real-time data processing.
+      Calvin McCormick builds quantitative trading systems and financial models in Python —
+      multi-agent AI frameworks, backtesting engines, and real-time risk tools processing
+      1000+ market events per second with sub-100ms latency.
       <br />
-      With expertise in Python, FastAPI, React, and WebSocket technologies, Calvin builds sophisticated trading infrastructure.
+      Focused on converting complex financial logic into scalable, production-grade infrastructure.
     </>
   ),
 };
@@ -93,49 +93,42 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Calvin is a San Antonio-based Machine Learning Engineer with a passion for building intelligent 
-        systems for quantitative finance. With a background in New Media and Digital Design, he combines 
-        technical expertise with a deep understanding of user experience to create sophisticated trading 
-        infrastructure that bridges the gap between complex algorithms and practical application.
+        Calvin is a San Antonio-based Quantitative Developer and ML Engineer who builds
+        production-grade financial systems — algorithmic trading frameworks, multi-agent AI models,
+        performance attribution tools, and real-time risk infrastructure. He specializes in Python-based
+        quantitative development, translating complex financial logic into scalable, maintainable code
+        across Pandas, NumPy, SciPy, and scikit-learn. His work spans systematic strategy development,
+        backtesting, and live market data pipelines, with a focus on bridging the gap between
+        quantitative research and reliable implementation.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "Whole Foods Market",
-        timeframe: "Present",
-        role: "Team Member",
-        achievements: [
-          <>
-            Currently working full-time while developing production-grade trading systems and 
-            seeking opportunities in quantitative finance and fintech.
-          </>,
-        ],
-        images: [],
-      },
-      {
         company: "Independent Development",
         timeframe: "2024 - Present",
-        role: "ML Engineer & Trading Systems Developer",
+        role: "Quantitative Developer & ML Engineer",
         achievements: [
           <>
-            Built multi-agent AI trading system with specialized agents for collaborative market 
-            analysis, demonstrating advanced software architecture and AI orchestration.
+            Architected a multi-agent AI trading system with specialized agents for technical analysis,
+            sentiment processing, and risk management — processing 1000+ real-time market events per
+            second with sub-100ms latency.
           </>,
           <>
-            Developed production-grade algorithmic trading framework implementing Research-Backtest-Implement 
-            (RBI) methodology with comprehensive risk management and backtesting capabilities.
+            Built a production-grade algorithmic trading framework implementing Research-Backtest-Implement
+            (RBI) methodology, with modular risk management, position sizing, and performance attribution
+            across multiple strategy types.
           </>,
           <>
-            Created real-time market analysis dashboard with WebSocket streaming, processing 1000+ 
-            messages per second with sub-100ms latency.
+            Developed a real-time market analysis dashboard using WebSocket streaming and technical
+            indicators (RSI, MACD, Bollinger Bands) with a React frontend and FastAPI backend.
           </>,
           <>
-            Designed and deployed AI-powered trade planning application using Google Gemini API for 
-            institutional-grade multi-timeframe analysis.
+            Designed an AI-powered trade planning tool using Google Gemini API for multi-timeframe
+            quantitative analysis, generating institutional-grade signals from live market data.
           </>,
         ],
         images: [],
@@ -151,10 +144,22 @@ const about: About = {
         ],
         images: [],
       },
+      {
+        company: "Whole Foods Market",
+        timeframe: "2021 - Present",
+        role: "Team Member",
+        achievements: [
+          <>
+            Full-time employment while independently developing quantitative trading systems and
+            pursuing opportunities in quantitative finance and fintech.
+          </>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Education",
     institutions: [
       {
@@ -168,72 +173,66 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical Skills",
     skills: [
       {
-        title: "Machine Learning & AI",
+        title: "Quantitative Development",
         description: (
-          <>Building multi-agent systems, real-time data processing, and AI-powered trading strategies 
-          using Python, Pandas, NumPy, and advanced ML frameworks.</>
+          <>
+            Financial modeling, performance attribution, valuation frameworks, and algorithmic strategy
+            development using Python, Pandas, NumPy, SciPy, and scikit-learn across liquid and
+            illiquid asset classes.
+          </>
         ),
         tags: [
-          {
-            name: "Python",
-            icon: "python",
-          },
-          {
-            name: "NumPy",
-            icon: "numpy",
-          },
+          { name: "Python", icon: "python" },
+          { name: "NumPy", icon: "numpy" },
         ],
         images: [],
       },
       {
         title: "Trading Infrastructure",
         description: (
-          <>Algorithmic trading frameworks, backtesting engines, risk management systems, 
-          and WebSocket-based real-time market data streaming.</>
+          <>
+            End-to-end trading system architecture — backtesting engines, real-time risk tools,
+            WebSocket-based market data pipelines, and multi-agent AI frameworks for signal generation
+            and execution.
+          </>
         ),
         tags: [
-          {
-            name: "Python",
-            icon: "python",
-          },
-          {
-            name: "FastAPI",
-            icon: "fastapi",
-          },
+          { name: "Python", icon: "python" },
+          { name: "FastAPI", icon: "fastapi" },
         ],
         images: [],
       },
       {
         title: "Full-Stack Development",
         description: (
-          <>Python (FastAPI, Flask), React, Next.js, WebSocket, Redis, PostgreSQL, 
-          Docker, and Vercel deployment.</>
+          <>
+            Python (FastAPI, Flask), React, Next.js, WebSocket, Redis, PostgreSQL,
+            Docker, and Vercel deployment. Comfortable converting complex Excel-based financial
+            logic into scalable Python solutions.
+          </>
         ),
         tags: [
-          {
-            name: "React",
-            icon: "react",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
+          { name: "React", icon: "react" },
+          { name: "Next.js", icon: "nextjs" },
         ],
         images: [],
       },
       {
         title: "Financial Analysis",
         description: (
-          <>Technical indicators (RSI, MACD, Bollinger Bands), multi-timeframe analysis, 
-          order flow analysis, and quantitative strategy development.</>
+          <>
+            Technical indicators, multi-timeframe analysis, order flow, quantitative risk modeling,
+            and systematic strategy research. Focused on building tools that translate analytical
+            frameworks into actionable, auditable output.
+          </>
         ),
         tags: [],
         images: [],
-      },  
+      },
     ],
   },
 };
@@ -243,17 +242,13 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about trading and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Algorithmic trading and ML projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Quantitative trading and ML engineering projects by ${person.name}`,
 };
 
 const gallery: Gallery = {
